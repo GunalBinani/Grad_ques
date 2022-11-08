@@ -37,3 +37,4 @@ public class Boo {
         System.out.println("No. of ones are : " + one);
     }
 }
+
