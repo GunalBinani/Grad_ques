@@ -21,12 +21,18 @@ public class generate_array {
 
 
     }
-    void gen_range(int start, int last, int iterate){
-        int[] a = new int[last/iterate];
-      int c=0;
-      for (int i = start; i <=last ; i=i+iterate){
-          a[c++] = i;}
+    public void gen_range(int start, int last, int skip){
+        int[] a = new int[last/skip];
+      int c=start;
+//      for (int i = start; i <=last ; i=i+skip){
+//          a[c++] = i;
+//      }
+        for(int i = 0; i < a.length; i++){
+            a[i] = c;
+            c=c+skip;
+        }
       c=0;
-        for (int i = start; i <=last; i++) System.out.println(a[c++]);
+        for (int i = 0; i <a.length; i++)
+            System.out.println(a[i]);
     }
 }

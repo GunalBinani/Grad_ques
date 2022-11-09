@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Boo {
+public class CoinGenerate {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the integer");
@@ -30,7 +30,7 @@ public class Boo {
         if (rem% 2 >= 1) {
             one = 1;
         }
-        //sout
+        //
         System.out.println("No. of tens are : " + tens);
         System.out.println("No. of fives are : " + fives);
         System.out.println("No. of twos are : " + twos);
